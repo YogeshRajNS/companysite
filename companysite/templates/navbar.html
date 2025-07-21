@@ -1,0 +1,20 @@
+{% load static %}
+<header class="top-header">
+    <!-- Left: Hamburger and nav links -->
+    <div class="nav-container-left">
+        <div class="menu-toggle">&#9776;</div>
+        <div class="nav-left">
+            <a href="{% url 'home' %}">Home</a>
+            <a href="{% url 'about' %}">About Us</a>
+            <a href="{% url 'help' %}">Help</a>
+        </div>
+    </div>
+    <!-- Right: Logo and company name -->
+    <div class="nav-right">
+        <img src="{% static 'image/logo1.png' %}" alt="Logo" class="logo">
+        <span class="company-name">My Company</span>
+    </div>
+</header>
+
+
+

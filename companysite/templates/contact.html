@@ -1,0 +1,9 @@
+
+<div class="form-container">
+    <form method="post" action="{% url 'contact' %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="submit-btn">submit</button>
+    </form>
+</div>
+
